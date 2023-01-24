@@ -1,0 +1,1 @@
+this is my new file creating with help of write.js file

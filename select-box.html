@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>select-box</title>
+        <h2>Take radio button user in html forms</h2>
+
+    </head>
+    <body>
+        <select id="selectbox">
+            <option value="Blockchain">Blockchain</option>
+            <option value="Ineuron">Ineuron</option>
+            <option value="Solidity">Solidity</option>
+            <option value="hash">Masage Hash</option>
+        </select> 
+        <button onclick="fn1()">Choose Option</button>
+    </body>
+    <script type="text/javascript">
+        function fn1(){
+            let slt = document.getElementById("selectbox");
+            window.alert(slt.options[slt.selectedIndex].value);
+        }
+    </script>
+</html>

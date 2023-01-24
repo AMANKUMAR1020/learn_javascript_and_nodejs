@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+<title>DOM glow and off</title>
+<h1> Bulb on and off</h1>
+</head>
+
+  <body>
+    <p id="regex">welcome to Ineuron, this is full stack blockchain development</p>
+    <script type="text/javascript">
+        let text="welcome to Ineuron, this is full stack blockchain development";
+        function replaceText(){
+            let text = document.getElementById("regex").innerHTML;
+            document.getElementById("regex").innerHTML = text.replace("blockchain","javascript");
+        }
+    </script>
+    <button onclick="replaceText()">Try the button</button>
+  </body>
+</html>

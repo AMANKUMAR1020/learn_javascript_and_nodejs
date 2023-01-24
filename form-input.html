@@ -1,0 +1,102 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Input</title>
+        <h2>Take input form user in html forms</h2>
+
+    </head>
+    <body>
+        <input placeholder="enter username" id="text1"></br>
+        <input type="password" placeholder="enter password" id="text2" ></br>
+        <button onclick="func1()" id="btn1">sumbmit</button>
+    </body>
+    <script type="text/javascript">
+        function func1(){
+            let str=document.getElementById("text1").value;
+            window.alert("user is "+str);
+        }
+    </script>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>radio button</title>
+        <h2>Take radio button user in html forms</h2>
+
+    </head>
+    <body>
+        <input type="radio" name="grp1" id="rd1" value="Blockchain">Blockchain</br>
+        <input type="radio" name="grp2" id="rd2" value="solidity">solidity</br>
+        <input type="radio" name="grp3" id="rd3" value="node js">node js</br>
+        <input type="radio" name="grp4" id="rd4" value="react js">react js</br>
+
+        <button onclick="fn1()" id="btn1">click me</button> 
+    </body>
+    <script type="text/javascript">
+        function fn1(){
+            let rd1=document.getElementById("rd1");
+            let rd2=document.getElementById("rd2");
+            let rd3=document.getElementById("rd3");
+            let rd4=document.getElementById("rd4");
+            if(rd1.checked == true){
+                alert("the topic is todays class is "+rd1.value);
+            }
+            else if(rd2.checked==true){
+                alert("the topic is todays class is "+rd2.value);
+            }
+            else if(rd3.checked==true){
+                alert("the topic is todays class is "+rd3.value);
+            }
+            else if(rd4.checked==true){
+                alert("the topic is todays class is "+rd4.value);
+            }
+            else{
+                alert("you choose nothing !");
+            }
+        }
+    </script>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>radio button</title>
+        <h2>Take radio button user in html forms</h2>
+
+    </head>
+    <body>
+        <input type="radio" name="grp1" id="rd1" value="Blockchain">Blockchain</br>
+        <input type="radio" name="grp2" id="rd1" value="solidity">solidity</br>
+        <input type="radio" name="grp3" id="rd1" value="node js">node js</br>
+        <input type="radio" name="grp4" id="rd1" value="react js">react js</br>
+
+        <button onclick="fn1()" id="btn1">click me</button> 
+    </body>
+    <script type="text/javascript">
+        function fn1(){
+            let rd1=document.getElementById("rd1");
+            let rd2=document.getElementById("rd2");
+            let rd3=document.getElementById("rd3");
+            let rd4=document.getElementById("rd4");
+            if(rd1.checked == true){
+                alert("the topic is todays class is "+rd1.value);
+            }
+            else if(rd2.checked==true){
+                alert("the topic is todays class is "+rd2.value);
+            }
+            else if(rd3.checked==true){
+                alert("the topic is todays class is "+rd3.value);
+            }
+            else if(rd4.checked==true){
+                alert("the topic is todays class is "+rd4.value);
+            }
+            else{
+                alert("you choose nothing !");
+            }
+        }
+    </script>
+</html>

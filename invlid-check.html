@@ -1,0 +1,87 @@
+<!--
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Invailed Check
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function validate(){
+                let tex=document.getElementById("text1").value;
+                
+                //tell the regex to start and end with the folling condition
+                //^ is used to start a regex
+                //$ is used to end a regex
+                
+                // let regex = /[abcd]/;
+                  let regex=/^[6-9]\d{9}$/;
+
+                if(regex.text(tex)){
+                    document.getElementById("lb1text").innerHTML="valid";
+                    document.getElementById("lb1text").style.visibility="Visible";
+                    document.getElementById("lb1text").style.color="green";
+                }
+                else{
+                    document.getElementById("lb1text").innerHTML="Invalid";
+                    document.getElementById("lb1text").style.visibility="Visible";
+                    document.getElementById("lb1text").style.color="red";
+                }
+            }
+        </script>
+        <form>
+            
+            <input id="text1" placeholder="Mobile number" type="text"/><br>
+            <label id="lb1text" style="color: red;">Invalid</label><br>    
+            <button onclick="validate()" type="button">validate</button>
+
+        </form>
+    </body> 
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Invailed Email Check
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function validate(){
+                let tex=document.getElementById("text1").value;
+                
+                //tell the regex to start and end with the folling condition
+                //^ is used to start a regex
+                //$ is used to end a regex
+                
+                // let regex = /[abcd]/;
+                // let regex=/^[6-9]\d{9}$/;
+                //let regex= /^[0-9]\d{3}[0-9]\d{3}[0-9]\d{3}$/;
+                
+                let regex = /^([a-z0-9\.-]+)@([a-z0-9-]+)\.([a-z]{2,20})(.[a-z]{2,10})?$/;
+                if(regex.text(tex)){
+                    document.getElementById("lb1text").innerHTML="valid";
+                    document.getElementById("lb1text").style.visibility="Visible";
+                    document.getElementById("lb1text").style.color="green";
+                }
+                else{
+                    document.getElementById("lb1text").innerHTML="Invalid";
+                    document.getElementById("lb1text").style.visibility="Visible";
+                    document.getElementById("lb1text").style.color="red";
+                }
+            }
+        </script>
+        <form>
+            
+            <input id="text1" placeholder="E-mail ID" type="text"/><br>
+            <label id="lb1text" style="color: red;
+            visibility: hidden">Invalid</label><br>    
+            <button onclick="validate()" type="button">validate</button>
+        </form>
+    </body> 
+</html>
